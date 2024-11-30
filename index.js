@@ -8,6 +8,10 @@ app.use(cors());
 
 // ### BD1 - Assignment (FlipDeal Ecommerce Cart) ####
 
+app.get('/', (req, res)=>{
+  res.send('Welcome to FlipDeal Ecommerce!');
+})
+
 // Endpoint 1: Calculate the total price of items in the cart
 ///cart-total?newItemPrice=1200&cartTotal=0
 function calculateTotalCartValue(newItemPrice, cartTotal) {
